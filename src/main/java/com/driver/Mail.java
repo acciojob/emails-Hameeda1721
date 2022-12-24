@@ -2,12 +2,12 @@ package com.driver;
 
 import java.util.Date;
 
-public class Mail{
+public class Mail {
     private Date Date;
     private String Sender;
     private String Message;
 
-    public Mail(Date Date, String Sender, String Message){
+    public Mail(Date Date, String Sender, String Message) {
         this.Date = Date;
         this.Sender = Sender;
         this.Message = Message;

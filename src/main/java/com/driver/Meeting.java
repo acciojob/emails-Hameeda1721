@@ -6,7 +6,7 @@ public class Meeting{
     private LocalTime startTime;
     private LocalTime endTime;
 
-    public LocalTime getStartTime(){
+    public LocalTime getStartTime() {
         return startTime;
     }
 
@@ -22,7 +22,7 @@ public class Meeting{
         this.endTime = endTime;
     }
 
-    public Meeting(LocalTime startTime, LocalTime endTime){
+    public Meeting(LocalTime startTime, LocalTime endTime) {
         this.startTime = startTime;
         this.endTime = endTime;
     }

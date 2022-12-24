@@ -1,12 +1,12 @@
 package com.driver;
 
-public class Email{
+public class Email {
 
     private String emailId;
     private String password;
 
 
-    public Email(String emailId){
+    public Email(String emailId) {
         this.emailId = emailId;
         this.password = "Accio@123";
     }
@@ -19,7 +19,7 @@ public class Email{
         return password;
     }
 
-    public void changePassword(String oldPassword, String newPassword){
+    public void changePassword(String oldPassword, String newPassword) {
         //Change password only if the oldPassword is equal to current password and the new password meets all of the following:
         // It contains at least 8 characters
         //  It contains at least one uppercase letter
@@ -31,21 +31,21 @@ public class Email{
             boolean isLowerCase = false;
             boolean isDigit = false;
             boolean isSpecialCharacter = false;
-            for (int i = 0; i < newPassword.length(); i++){
-                if (newPassword.charAt(i) >= 65 && newPassword.charAt(i) <= 90){
+            for (int i = 0; i < newPassword.length(); i++) {
+                if (newPassword.charAt(i) >= 65 && newPassword.charAt(i) <= 90) {
                     isUpperCase = true;
                 }
-                if (newPassword.charAt(i) >= 97 && newPassword.charAt(i) <= 122){
+                if (newPassword.charAt(i) >= 97 && newPassword.charAt(i) <= 122) {
                     isLowerCase = true;
                 }
-                if (newPassword.charAt(i) >= 48 && newPassword.charAt(i) <= 57){
+                if (newPassword.charAt(i) >= 48 && newPassword.charAt(i) <= 57) {
                     isDigit = true;
                 }
-                if (!Character.isLetterOrDigit(newPassword.charAt(i))){
+                if (!Character.isLetterOrDigit(newPassword.charAt(i))) {
                     isSpecialCharacter = true;
                 }
             }
-            if (newPassword.length() >= 8 && isUpperCase && isLowerCase && isDigit && isSpecialCharacter){
+            if (newPassword.length() >= 8 && isUpperCase && isLowerCase && isDigit && isSpecialCharacter) {
                 this.password = newPassword;
 
             }
